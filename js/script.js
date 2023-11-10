@@ -28,13 +28,28 @@ L'output del prezzo finale va scritto in pagina in forma umana (con massimo due 
 
  if (etàPasseggero < 18){
     const PriceTotale = (priceForKm * 20) / 100;
-    console.log(PriceTotale);
+    console.log(PriceTotale)
+    document.getElementById('Price').innerHTML = 'il prezzo totale è:' + PriceTotale + 'Euro';
+//4)if il passeggeo ha più di 65 anni fai losconto del 40% al prezzo calcolato con la moltiplicazione altrimeti prezzo senza sconto
+ } else if(etàPasseggero > 65) {
+    const PriceTotale = (priceForKm * 40) / 100;
+    console.log(PriceTotale)
+    document.getElementById('Price').innerHTML = 'il prezzo totale è:' + PriceTotale + 'Euro';
+
+//5)scrivi il prezzo totale senza sconto
+ } else{
+    console.log(PriceTotale)
+    document.getElementById('Price').innerHTML = 'il prezzo totale senza sconto è:' + PriceTotale + 'Euro';
  }
 
 
-//4)if il passeggeo ha più di 65 anni fai losconto del 40% al prezzo calcolato con la moltiplicazione altrimeti prezzo senza sconto
 
-//5)scrivi il prezzo totale sullo schermo e non con console.log()
+
+
+
+
+
+
 
 
 
