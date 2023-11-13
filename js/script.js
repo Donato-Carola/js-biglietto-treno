@@ -9,7 +9,7 @@ L'output del prezzo finale va scritto in pagina in forma umana (con massimo due 
 
                                     //1) Chiedere all'utente  il numero di kilometri che vuole percorrere e l'età del passeggero
 
-const kmDaSvolgere = parseInt(prompt("Inserisci i kilometri che vuoi svolgere"));
+const kmDaSvolgere = (prompt("Inserisci i kilometri che vuoi svolgere"));
 console.log("km decisi dal passeggero che vuole percorrere " + kmDaSvolgere);
 
 const etàPasseggero = parseInt( prompt("iniserisci l'età del passeggero"));
