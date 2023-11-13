@@ -9,7 +9,7 @@ L'output del prezzo finale va scritto in pagina in forma umana (con massimo due 
 
                                     //1) Chiedere all'utente  il numero di kilometri che vuole percorrere e l'età del passeggero
 
-const kmDaSvolgere = (prompt("Inserisci i kilometri che vuoi svolgere"));
+const kmDaSvolgere = parseFloat(prompt("Inserisci i kilometri che vuoi svolgere"));
 console.log("km decisi dal passeggero che vuole percorrere " + kmDaSvolgere);
 
 const etàPasseggero = parseInt( prompt("iniserisci l'età del passeggero"));
@@ -38,7 +38,7 @@ if (etàPasseggero < 18) {
 
                                     //4)if il passeggeo ha più di 65 anni fai losconto del 40% al prezzo calcolato con la moltiplicazione altrimeti prezzo senza sconto
 
-} else if (etàPasseggero > 65) {
+} else if (etàPasseggero >= 65) {
   const  sconto= ((priceForKm * 40) / 100);
   const priceTotale = (priceForKm - sconto).toFixed(2);
 
